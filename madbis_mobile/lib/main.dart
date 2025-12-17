@@ -20,6 +20,7 @@ class MadbisMobile extends StatelessWidget {
         primaryColor: Colors.deepPurple,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 244, 244, 244),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.deepPurple,
           foregroundColor: Colors.white,
@@ -30,7 +31,7 @@ class MadbisMobile extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         textTheme: const TextTheme(
-          bodySmall: TextStyle(fontSize: 14, color: Colors.black87),
+          bodySmall: TextStyle(fontSize: 16, color: Colors.black87),
           bodyMedium: TextStyle(fontSize: 18, color: Colors.black87),
           bodyLarge: TextStyle(fontSize: 24, color: Colors.black87),
         ),

@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       product['image'] ??
                       'assets/images/product_placeholder.png',
                   name: product['name'] ?? 'Unknown Product',
-                  price: product['price'] ?? '\$0.00',
+                  price: product['price'] ?? '\£0.00',
                 ),
               );
             },

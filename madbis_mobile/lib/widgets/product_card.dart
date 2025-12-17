@@ -15,6 +15,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.white,
       elevation: 3,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -42,13 +43,18 @@ class ProductCard extends StatelessWidget {
                   child: Text(
                     name,
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                Text(price, style: const TextStyle(color: Colors.grey)),
+                Text(
+                  price,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall!.copyWith(),
+                ),
               ],
             ),
           ),
